@@ -30,9 +30,9 @@ $ pip --version
 
 ```bash
 # Agora iremos fazer o download das dependências utilizadas no projeto.
-# As dependecias são : requests e beautifulsoup4
+# As dependêcias são: requests e beautifulsoup4
 # Abra um novo terminal como na imagem do passo 1, e execute os seguintes comandos para baixar as dependências:
-# Ao final do download reinicie o Visual Studio
+# Obs: Ao final do download reinicie o Visual Studio.
 $ pip install requests
 $ pip install beautifulsoup4
 ```
