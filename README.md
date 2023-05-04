@@ -9,13 +9,13 @@
 
 ### 🌍 Preparação de Ambiente
 - Precisa estar instalado em seu ambiente a IDE Visual Studio Code
-- Foi utilizado a linguagem Python (Terá que instalar também)
+- Precisa estar instalado em seu ambiente a linguagem Python 
 
 #### Começando
 
 ```bash
 # Após o download do Python e Visual Studio Code, abra o cmd (Windows) ou terminal (Linux)
-# No windows digite (python) no cmd, caso não esteja instalado corretamente abrirá uma aba na microsoft store, aperte o botão de download.
+# No windows, digite (python) no cmd, caso não esteja instalado corretamente abrirá uma aba para instalar o python na microsoft store, aperte no botão de download.
  EX: $ python
 
 # No linux (Debian e derivados como Ubuntu) escreva no terminal o seguinte comando:
@@ -31,7 +31,7 @@ $ pip --version
 ```bash
 # Agora iremos fazer o download das dependências utilizadas no projeto.
 # As dependecias são : requests e beautifulsoup4
-# Abra um novo termianl como no passo abaixo, e execute os seguintes comandos para baixar as dependências:
+# Abra um novo terminal como na imagem do passo 1, e execute os seguintes comandos para baixar as dependências:
 # Ao final do download reinicie o Visual Studio
 $ pip install requests
 $ pip install beautifulsoup4
