@@ -24,38 +24,47 @@ class NetshoesScraper:
         # Essa condição verifica se o elemento 'h1' dentro da section com a classe 'short-description' foi encontrado. 
         # Se title_element não for None, o texto do elemento é extraído e armazenado na variável title usando o método
         # text.strip(). Caso contrário, uma mensagem de erro é exibida informando que o elemento não foi encontrado.
-        title_element = soup.find('section', class_='short-description').find('h1')#.text.strip()
-        if title_element:
-            title = title_element.text.strip()
-        else:
-            raise ValueNotFound("Elemento 'h1' dentro de 'section' com class='short-description' não encontrado.")
+        try:
+            title_element = soup.find('section', class_='short-description').find('h1')#.text.strip()
+            if title_element:
+                    title = title_element.text.strip()
+
+        except AttributeError as e:
+                raise ValueNotFound("Elemento 'h1' dentro de 'section' com class='short-description' não encontrado.")
+
 
         #Essa condição verifica se o elemento 'strong' dentro do 'span' dentro do 'div' com a classe 'default-price'
         #foi encontrado. Se price_element não for None, o texto do elemento é extraído e armazenado na variável price
         #usando o método text.strip(). Caso contrário, uma mensagem de erro é exibida informando que o elemento não foi encontrado.
-        price_element = soup.find('div', class_='default-price').find('span')
-        if price_element:
-            price = price_element.find('strong').text.strip()
-        else:
+        try:
+            price_element = soup.find('div', class_='default-price').find('span')
+            if price_element:
+                price = price_element.find('strong').text.strip()
+
+        except AttributeError as e:
             raise ValueNotFound("Elemento 'strong' dentro de 'span' dentro de 'div' com class='default-price' não encontrado.")
 
         # Essa condição verifica se o elemento 'img' com a classe 'zoom' foi encontrado. Se image_element não for None,
         # o valor do atributo 'src' do elemento é extraído e armazenado na variável image. 
         # Caso contrário, uma mensagem de erro é exibida informando que o elemento não foi encontrado.
-        image_element = soup.find('img', class_='zoom')
-        if image_element:
-            image = image_element['src']
-        else:
+        try:    
+            image_element = soup.find('img', class_='zoom')
+            if image_element:
+                image = image_element['src']
+
+        except AttributeError as e:
             raise ValueNotFound("Elemento 'img' com class='zoom' não encontrado.")
 
         # Essa condição verifica se o elemento 'p' com o atributo 'itemprop' igual a 'description' foi encontrado. 
         # Se description_element não for None, o texto do elemento é extraído e armazenado na variável description 
         # usando o método get_text(strip=True). Caso contrário, uma mensagem de erro é exibida informando que o elemento
         # não foi encontrado.
-        description_element = soup.find('p', itemprop='description')
-        if description_element:
-            description = description_element.get_text(strip=True)
-        else:
+        try:
+            description_element = soup.find('p', itemprop='description')
+            if description_element:
+                description = description_element.get_text(strip=True)
+                
+        except AttributeError as e:
             raise ValueNotFound("Elemento 'p' com atributo itemprop='description' não encontrado.")
 
         #Retorna o objeto Product com seus atributos preenchidos
