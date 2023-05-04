@@ -18,7 +18,7 @@
 # No windows, digite (python) no cmd, caso não esteja instalado corretamente abrirá uma aba para instalar o python na microsoft store, aperte no botão de download.
  EX: $ python
 
-# No linux (Debian e derivados como Ubuntu) escreva no terminal o seguinte comando:
+# No linux (Debian e derivados como Ubuntu) escreva no terminal o seguinte comando para realizar o download do python:
  EX: $ sudo apt-get install python3
  
 # Para testar se o python e o pip (Instalado automaticamente junto com o python) estão corretamente instalados, execute os seguintes comandos:
@@ -36,7 +36,7 @@ $ pip --version
 $ pip install requests
 $ pip install beautifulsoup4
 ```
-
+#### Criando novo terminal
 1. Crie um novo terminal para execução do projeto em: Terminal -> New Terminal
 
 ![Novo Terminal](https://github.com/KaianLuciano/assets/blob/main/novoTerminal.png)
@@ -47,16 +47,20 @@ $ pip install beautifulsoup4
 
 ![VisualStudio](https://github.com/KaianLuciano/assets/blob/main/importar.png.png)
 
+#### Verificando caminho do diretório
 3. Dentro do terminal verifique se o caminho está correto para a pasta do projeto,
 caso não esteja, pode navegar até ele usando cd /caminho/do/projeto/ não se esqueça
 de trocar /caminho/do/arquivo pelo source do local que o projeto se encontra.
 
-![Projeto](https://github.com/KaianLuciano/assets/blob/main/ExecutarProjeto.png)
+![Projeto](https://github.com/KaianLuciano/assets/blob/main/InkedlocalMain.jpg)
 
-4. Em seguida execute o projeto utilizando [python ./Main.py] como mostra a imagem a seguir.
-Obs: O resultado do programa também estará salvo em resultados.txt na pasta do projeto.
+#### Executando Programa
+4. <p>Navegue até o pacote [Program] aonde se encontra o arquivo Main.py que será executado pelo terminal.</p>
+   <p>Comandos de navegação: [ls: Mostra as pastas do diretorio atual] [cd: Entra na pasta do caminho indicado Ex: cd /caminho/arquivo]</p>
+   <p>Em seguida execute o projeto utilizando [python ./Main.py] como mostra a imagem a seguir.</p>
+   <p>Obs: O resultado do programa também estará salvo em resultados.txt na pasta Program, mesma do arquivo Main.py</p>
 
-![Iniciar Projeto](https://github.com/KaianLuciano/assets/blob/main/init.png)
+![Iniciar Projeto](https://github.com/KaianLuciano/assets/blob/main/InkedinitMain.jpg)
 
 <hr />
 
