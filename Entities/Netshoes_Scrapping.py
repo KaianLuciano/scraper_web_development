@@ -1,8 +1,19 @@
 import requests
 from bs4 import BeautifulSoup
-from Product import Product
-from ValueNotFound import ValueNotFound
+import sys
+import os
 
+# Obtém o diretório raiz do projeto
+root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Adiciona o diretório raiz ao sys.path
+sys.path.append(root_path)
+
+# Importa a classe ValueNotFound do pacote Exceptions
+from Exceptions.ValueNotFound import ValueNotFound
+
+# Importa a classe ValueNotFound do pacote Exceptions
+from .Product import Product
 
 class NetshoesScraper:
     #Construtor da classe

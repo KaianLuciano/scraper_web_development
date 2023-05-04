@@ -1,4 +1,13 @@
-from Netshoes_Scrapping import NetshoesScraper
+import sys
+import os
+
+# Obtém o diretório raiz do projeto
+root_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Adiciona o diretório raiz ao sys.path
+sys.path.append(root_path)
+
+from Entities.Netshoes_Scrapping import NetshoesScraper
 
 # Autor: Kaian Luciano Alves Dos Santos
 # Projeto: Desenvolvimento Web Scraper
