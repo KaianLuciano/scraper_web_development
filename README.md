@@ -31,20 +31,20 @@ $ pip --version
 ```bash
 # Agora iremos fazer o download das dependências utilizadas no projeto.
 # As dependecias são : requests e beautifulsoup4
-# Execute os seguintes comandos no Terminal ou CMD para baixar as dependências:
+# Abra um novo termianl como no passo abaixo, e execute os seguintes comandos para baixar as dependências:
 $ pip install requests
 $ pip install beautifulsoup4
 ```
+
+1. Crie um novo terminal para execução do projeto em: Terminal -> New Terminal
+
+![Novo Terminal](https://github.com/KaianLuciano/assets/blob/main/novoTerminal.png)
 <hr />
 
 #### Importando o projeto para o Visual Studio Code
-1. Com o Visual Studio Code aberto, aperte em: File -> Open Folder e procure aonde alocou o projeto
+2. Com o Visual Studio Code aberto, aperte em: File -> Open Folder e procure aonde alocou o projeto
 
 ![VisualStudio](https://github.com/KaianLuciano/assets/blob/main/importar.png.png)
-
-2. Crie um novo terminal para execução do projeto em: Terminal -> New Terminal
-
-![Novo Terminal](https://github.com/KaianLuciano/assets/blob/main/novoTerminal.png)
 
 3. Dentro do terminal verifique se o caminho está correto para a pasta do projeto,
 caso não esteja, pode navegar até ele usando cd /caminho/do/projeto/ não se esqueça
