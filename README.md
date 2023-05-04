@@ -15,15 +15,17 @@
 
 ```bash
 # Após o download do Python e Visual Studio Code, abra o cmd (Windows) ou terminal (Linux)
-# No windows digite (python) no cmd caso não esteja instalado corretamente abrirá uma aba na microsoft store, aperte o botão de download
+# No windows digite (python) no cmd, caso não esteja instalado corretamente abrirá uma aba na microsoft store, aperte o botão de download.
  EX: $ python
 
-# No linux (Debia e derivados como Ubuntu) escreva no terminal o seguinte comando
- EX: sudo apt-get install python3
+# No linux (Debian e derivados como Ubuntu) escreva no terminal o seguinte comando:
+ EX: $ sudo apt-get install python3
  
 # Para testar se o python e o pip (Instalado automaticamente junto com o python) estão corretamente instalados, execute os seguintes comandos:
 $ python --version
 $ pip --version
+
+#Para finalizar baixe a dependência do python no Visual Studio Code
 ```
 
 ```bash
